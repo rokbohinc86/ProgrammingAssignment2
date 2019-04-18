@@ -3,8 +3,9 @@
 ## accesing the cached inverse if the inverse of that matrix was already calculated before 
 
 ## makeCacheMatrix takes as the input a matrix "m", sets the inv to NULL and returnes 
-## functions "get", "setinv" and "gitinv". "get" gets the original matrix "m", "getinv" gets
-## the value "inv", and "setinv" sets "inv" to a given value.
+## functions "set", get", "setinv" and "gitinv". "set" sets a new  given matrix and resets inv 
+##to "NULL" , get" gets the original matrix "m", "getinv" gets the value "inv", and "setinv"
+##sets "inv" to a given value.
 
 makeCacheMatrix <- function(m = matrix()) {
     inv <- NULL
